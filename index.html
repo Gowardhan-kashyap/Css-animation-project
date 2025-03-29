@@ -1,0 +1,45 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Animation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="box">
+    <div class="item">
+    </div>
+    </div>
+  </body>
+</html><style>.box{
+  background-color:yellow;
+  width:100vw;
+  height:80vh
+}
+.item{
+  animation: anime 6s linear  infinite 3s;
+  background-color:black;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+}
+@keyframes anime{
+  10%{
+  transform:translateX(5vw) translateY(5vh);
+}
+25%{
+    transform:translateX(15vw) translateY(10vh);
+  }
+  50%{
+    transform:translateX(50vw) translateY(15vh);
+  }
+  75%{
+transform:translateX(65vw) translateY(20vh);
+  }
+  100%
+  {
+    transform:translateX(87vw) translateY(2vh);
+  }
+}</style>
